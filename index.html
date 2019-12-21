@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" >
-<head>
+<head >
   <title>المطعم</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,11 +12,13 @@
 <body>
 
 <div class="jumbotron text-center">
-  <a class="navbar-brand" href="index.html"><h1>أوصم مطعم</h1></a>
+<button type="button" class="btn btn-light" onclick="englishNames()">English</button>
+<button type="button" class="btn btn-light" onclick="arabicNames()">عربي</button>
+  <a class="navbar-brand" href="index.html"><h1 id="restName">أوصم مطعم</h1></a>
   <p>تناول الطعام اللذيذ أينما كنت!</p> 
 </div>
   
-<div class="container">
+<div class="container" >
   <div class="row">
     <div class="col-sm-4">
 	<a class="nav-link" href="saudifood.html">
@@ -67,5 +69,13 @@
 <li>فتوش</li>
 
 </ol>
+<script>
+function englishNames() {
+$("#restName").html("Awsome restaurant");
+}
+function arabicNames() {
+$("#restName").html("أوصم مطعم");
+}
+</script>
 </body>
 </html>
