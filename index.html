@@ -14,6 +14,7 @@
 <div class="jumbotron text-center">
 <button type="button" class="btn btn-light" onclick="englishNames()">English</button>
 <button type="button" class="btn btn-light" onclick="arabicNames()">عربي</button>
+<br>
   <a class="navbar-brand" href="index.html"><h1 id="restName">أوصم مطعم</h1></a>
   <p>تناول الطعام اللذيذ أينما كنت!</p> 
 </div>
@@ -42,7 +43,7 @@
 	  </a>
     </div>
   </div>
-</div>
+  <div class="row text-center">
 
 <h2>المقبلات</h2>
 
@@ -69,12 +70,16 @@
 <li>فتوش</li>
 
 </ol>
+</div></div>
 <script>
 function englishNames() {
-$("#restName").html("Awsome restaurant");
+//$("#restName").html("Awsome restaurant");
+window.location.href="en/index.html";
+
 }
 function arabicNames() {
-$("#restName").html("أوصم مطعم");
+//$("#restName").html("أوصم مطعم");
+window.location.href="/index.html";
 }
 </script>
 </body>
